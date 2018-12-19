@@ -15,12 +15,19 @@
       body {
         font-family: "Open Sans", sans-serif;
       }
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      a:hover {
+        color: #888888;
+      }
       .logo-block {
         height: 100%;
         width: 100%;
       }
       .logo {
-        position: absolute;
+        position: relative;
         top: 250px;
         left: -250px;
         height: auto;
@@ -28,8 +35,8 @@
         margin-left: 50%;
       }
       .footer {
-        position: absolute;
-        top: 90vh;
+        position: relative;
+        margin-top: 60%;
         width: 100%;
         text-align: center;
       }
@@ -40,6 +47,11 @@
     <div class="logo-block">
       <img class="logo" src="assets/images/district512_logo.svg" />
     </div>
-    <div class="footer">Jeffrey Tran<br />jeff@district512.io</div>
+    <div class="footer">
+      Jeffrey Tran |
+      <a href="mailto:jeff@district512.io?subject=IT Consulting Question"
+        >jeff@district512.io</a
+      >
+    </div>
   </body>
 </html>
